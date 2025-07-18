@@ -12,6 +12,22 @@
 - **dotenv**
 
 ---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/alamshuvo/courier-service-backend.git
+cd your-repo-name
+
+npm install
+
+setup .env file you follow env.example
+
+npm run start:dev
+
+
 # 🚀 Full Stack Backend API (Node.js + Express + MongoDB + TypeScript)
 
 This is a scalable and well-structured backend API starter built using **Node.js**, **Express.js**, **MongoDB**, **Mongoose**, and **TypeScript**. It includes essential configurations like ESLint, dotenv, and basic structure for authentication, user roles, and modular coding.
@@ -42,22 +58,5 @@ courier/
 ├── package.json             # Project metadata and scripts
 └── README.md                # You're reading it!
 
-
-
-
-
-## 🔧 Setup Instructions
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/alamshuvo/courier-service-backend.git
-cd your-repo-name
-
-npm install
-
-setup .env file you follow env.example
-
-npm run start:dev
 
 
