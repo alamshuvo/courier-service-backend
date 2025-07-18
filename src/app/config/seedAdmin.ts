@@ -1,12 +1,12 @@
 import bcrypt from 'bcrypt';
-import { userModel } from '../modules/auth/auth.model'; // Adjust path based on your structure
+import { userModel } from '../modules/auth/auth.model'; 
+import config from '.';
 
 export const seedAdmin = async () => {
   try {
     const adminExists = await userModel.findOne({ role: 'admin' });
-
     if (!adminExists) {
-      const hashedPassword = await bcrypt.hash('admin123', 10); 
+      const hashedPassword = await bcrypt.hash(config.admin_password as string, 10); 
 
       await userModel.create({
         name: 'Super Admin',
